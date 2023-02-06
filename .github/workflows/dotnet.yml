@@ -4,8 +4,8 @@
 name: .NET
 defaults:
   run:
-    working directory: src
-    
+    working-directory: src
+
 on:
   push:
     branches: [ "master" ]
