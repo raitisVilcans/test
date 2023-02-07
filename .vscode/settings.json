@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/50265a38-e479-4ad2-a410-86781719e1cb/AppServices/subscriptions/50265a38-e479-4ad2-a410-86781719e1cb/resourceGroups/bootcamp-resorces/providers/Microsoft.Web/sites/rvilcbootcamp",
+    "appService.deploySubpath": "src"
+}
