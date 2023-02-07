@@ -49,7 +49,7 @@ jobs:
       - uses: azure/arm-deploy@v1
         with:
           resourceGroupName: bootcamp-resorces-2023
-          template: ./infrastructure/webapp.json
+          template: ./webapp.json
 
       - uses: actions/checkout@v3
 
