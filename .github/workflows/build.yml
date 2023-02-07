@@ -31,7 +31,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: dotnet build and publish
-        run: |
+        run:
           dotnet restore
           dotnet build --configuration Release
           dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/' 
