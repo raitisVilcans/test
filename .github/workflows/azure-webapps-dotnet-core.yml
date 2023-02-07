@@ -24,7 +24,7 @@ defaults:
     working-directory: src
 
 env:
-  AZURE_WEBAPP_NAME: webApp-3ana4f3cjmdu2     # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: 'webApp-3ana4f3cjmdu2'   # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '7.x'                 # set this to the .NET Core version to use
 
@@ -81,7 +81,7 @@ jobs:
   deploy:
     permissions:
       contents: none
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Development'
@@ -102,4 +102,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          package: .
